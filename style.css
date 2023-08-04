@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: "border-box";
+  /*bcoz paading,margin is included in size*/
+}
+body {
+  background-color: #0c111b;
+  width: 100%;
+  position: relative; /*bcoz there is a adjustment*/
+  font-family: roboto, sans-serif;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed; /*bcoz search bar is not scrolled*/
+  display: flex;
+  top: 0px;
+  left: 0px;
+  padding-left: 4%;
+  z-index: 0;
+  align-items: center;
+}
+.nav_links {
+  display: flex;
+  /*padding: 35px 0;*/
+  margin-top: 10px;
+  list-style: none;
+}
+.logo {
+  height: 70px;
+}
+.nav_items a {
+  text-decoration: none; /*eleiminate link styling*/
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: white;
+  opacity: 0.9;
+}
+.right {
+  display: block;
+  padding-right: 8%;
+  margin-left: auto;
+}
+.search_box {
+  border: none;
+  /*border-radius: 2px;*/
+  border-bottom: 1px solid white;
+  background: transparent;
+  width: 250px;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+.search_box:focus {
+  width: 400px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #1f80e0;
+}
+.subs_btn {
+  background: #1f80e0;
+  color: white;
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 5px;
+  outine: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 10px;
+}
+.login_link {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+}
+.vcc {
+  display: flex;
+  position: relative;
+  width: 94%;
+  height: 10vw;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+.video_card {
+  position: relative;
+  min-width: calc(100% / 5 - 10px);
+  /*justify-content: space-between;*/
+  width: calc(100% / 5-10px);
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #030b17;
+}
+.vid_img,
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video {
+  position: absolute;
+}
+.video_card:hover .vid_img {
+  display: none;
+}
+.carousel_container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  padding: 20px 0;
+  overflow-x: hidden;
+  margin-top: 80px;
+}
+.carousel {
+  position: relative;
+  width: 92%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+}
+.h1 {
+  color: white;
+  opacity: 0.9;
+  margin-left: 4%;
+  font-size: 22px;
+  font-weight: 700;
+}
+.movie_list {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin: 10px 0 20px;
+}
+.movie_card_container {
+  position: relative;
+  display: flex;
+  width: 92%;
+  height: 220px;
+  padding-left: 10px;
+  margin: 0 auto;
+  /*align-items: center;*/
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
